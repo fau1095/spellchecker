@@ -1,0 +1,1 @@
+4 a class I have to create a simple spell checkinng program that takes two files as inputs, 0ne containing correctly spelled words and one containing a paragraph with a few misspelled words. I thoughtt I had it figured out but I am getting an error I have never seen befor3

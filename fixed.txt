@@ -1,0 +1,1 @@
+For a class I have to create a simple spell checking program that takes two files as inputs, one containing correctly spelled words and one containing a paragraph with a few misspelled words. I thought I had it figured out but I am getting an error I have never seen before
