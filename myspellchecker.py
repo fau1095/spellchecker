@@ -1,18 +1,6 @@
 from spellchecker import SpellChecker
 import os
 
-def main():
-    fpath = input("Please enter the path to the file to spell check: ")
-    f = os.path.isfile(fpath)
-
-    if f:
-        misspelled_words = check_words(fpath)
-        fixed_words = fix_words(misspelled_words)
-        new_file_path = create_fixed_file(fpath, misspelled_words, fixed_words)
-        print(f"\nThe fixed text has been saved to: {new_file_path}")
-    else:
-        print("Invalid file path. Exiting.")
-
 def check_words(file_to_check):
     spell = SpellChecker()
     wrong = []
@@ -51,5 +39,17 @@ def create_fixed_file(original_file_path, misspelled_words, fixed_words):
 
     return new_file_path
 
+def mainfunction():
+    fpath = input("Please enter the path to the file to spell check: ")
+    f = os.path.isfile(fpath)
+
+    if f:
+        misspelled_words = check_words(fpath)
+        fixed_words = fix_words(misspelled_words)
+        new_file_path = create_fixed_file(fpath, misspelled_words, fixed_words)
+        print(f"\nThe fixed text has been saved to: {new_file_path}")
+    else:
+        print("Invalid file path. Exiting.")
+
 if __name__ == '__main__':
-    main()
+    mainfunction()
